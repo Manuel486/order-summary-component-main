@@ -1,0 +1,123 @@
+:root{
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-color: var(--Pale-blue);
+}
+
+.contenedor{
+    width: 40rem;
+    height: 60rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.contenedor__imagen img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.contenedor__formulario{
+    width: 100%;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3.8rem;
+}
+
+.contenedor__formulario h1{
+    font-size: 2.5rem;
+}
+
+.contenedor__descripcion {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--Desaturated-blue);
+}
+
+.formulario__precio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: var(--Very-pale-blue);
+}
+
+.formulario__precio img{
+    width: 4rem;
+}
+
+.formulario__precio a{
+    width: 13rem;
+    text-align: end;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.plan h5{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--Dark-blue);
+}
+
+.plan p{
+    font-size: 1.5rem;
+}
+
+.btn{
+    margin-top: 2rem;
+    height: 4.5rem;
+    color: white;
+    background-color: var(--Bright-blue);
+    border-radius: 15px;
+    border-color: var(--Bright-blue);
+    font-weight: bold;
+    box-shadow: 0px 20px 0px 0px var(--Very-pale-blue);
+}
+
+.formulario__cancelar{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    color: var(--Desaturated-blue);
+}
+
+
+
+
+
+
+
+
